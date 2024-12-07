@@ -47,6 +47,7 @@ public:
 int main(int argc, char **argv)
 {
     QApplication app(argc, argv);
+    // Qt采用单例模式，每个QMainWindow自动绑定到唯一一个QApplication实例
     MainWindow win;
     win.show();
     return app.exec();
